@@ -9,7 +9,7 @@ RegisterNetEvent("Ayse_NoCharacters:GetCharacter", function()
             return
         end
     end
-    AyseCore.Functions.CreateCharacter(player, GetPlayerName(player), "", "", "", GetPlayerName(player), "")
+    AyseCore.Functions.CreateCharacter(player, GetPlayerName(player), "", "", "")
     characters = AyseCore.Functions.GetPlayerCharacters(player)
     for id, characterData in pairs(characters) do
         AyseCore.Functions.SetActiveCharacter(player, id)
